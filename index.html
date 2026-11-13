@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Two Models</title>
+<meta name="description" content="A research report on how two investing models were chosen, and an interactive risk dial with made-up example accounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+:root{--bg:#0a0e17;--surface:#131a2b;--elev:#182138;--border:#1e2d4a;--border2:#2a3c60;--text:#e4e8f1;--text2:#9aa3b8;--text3:#646f86;
+  --blue:#4f8eff;--gold:#d9a21b;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:0 16px 64px}
+.wrap{max-width:880px;margin:0 auto}
+h1{font:700 clamp(1.9rem,5vw,2.8rem)/1.1 'Space Grotesk','Avenir Next',sans-serif;margin:56px 0 12px}
+.lede{color:var(--text2);max-width:62ch;margin:0 0 28px;font-size:1.05rem}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:700px){.cards{grid-template-columns:1fr}}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--border2);border-radius:14px;padding:20px 20px 18px;transition:border-color .15s,transform .15s}
+a.card:hover,a.card:focus-visible{border-color:var(--blue);outline:none;transform:translateY(-2px)}
+.k{font:600 .72rem 'Inter',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}
+.card h2{font:700 1.35rem/1.25 'Space Grotesk','Avenir Next',sans-serif;margin:6px 0 8px}
+.card p{margin:0 0 14px;color:var(--text2);font-size:.95rem}
+.go{font-weight:600;color:var(--blue)}
+.note{margin-top:28px;font-size:.85rem;color:var(--text3);max-width:70ch}
+</style>
+</head><body><div class="wrap">
+<h1>Two models, and how they were chosen</h1>
+<p class="lede">Two pages. The first explains how tens of thousands of tested investing ideas, checked on 25 years of
+carefully cleaned data, came down to one stock model and one crypto model. The second lets you try them: drag a single
+slider from "all cash" to "maximum risk" and see what each point would have done.</p>
+<div class="cards">
+  <a class="card" href="why-these-two-models.html"><div class="k">Report</div><h2>Why these two models</h2>
+    <p>The data, the checks that catch false winners, what failed, and why these two survived.</p><span class="go">Read the report →</span></a>
+  <a class="card" href="risk-dial.html"><div class="k">Interactive · best on a laptop</div><h2>Risk dial demo</h2>
+    <p>Example accounts only, all made up. Pick an account, move its slider, and watch growth and worst fall change.</p><span class="go">Open the dial →</span></a>
+</div>
+<p class="note">Everything here is a backtest: how a set of rules would have done on past prices. It is not a promise
+about the future and not investment advice. Nothing on these pages trades or connects to any account.</p>
+</div></body></html>

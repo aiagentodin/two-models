@@ -731,7 +731,7 @@ function renderRuler(sel){
 }
 function renderRules(){
   const b=BK[state.broker], c=caps();
-  $('rules-sub').textContent = `— ${b.name}: ${b.verified ? 'verified '+b.verified : 'DRAFT, not yet imported'}`;
+  $('rules-sub').textContent = `— ${b.name}: ${b.verified ? 'verified '+b.verified : 'DRAFT: rules from public pages, nothing verified inside an account'}`;
   const inst = [['futures14','14-market futures'],['perps','crypto perps'],['crypto_etf','spot crypto ETFs'],['lev_funds','2× / 3× funds'],['options','options']].map(([k,n])=>`<span class="${b.instruments[k]?'y':'n'}">${b.instruments[k]?'✓':'✕'} ${n}</span>`).join('');
   const capBar = (v,max,lab)=>`<div class="meter" style="margin:4px 0 14px"><div class="fill" style="width:${Math.min(100,v/max*100)}%;background:var(--accent)"></div><div class="mkl" style="left:${Math.min(100,v/max*100)}%">${lab}</div></div>`;
   $('rules-left').innerHTML = `<div class="rl">
